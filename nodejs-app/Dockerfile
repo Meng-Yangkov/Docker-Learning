@@ -1,5 +1,5 @@
 # Spcific the image
-FROM node:latest 
+FROM node
 
 #tell Run to install in this directory
 WORKDIR /node-app
@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 80
 
 #excute when container started
-CMD ["node", "server.js"];
+CMD ["node", "server.js"]
