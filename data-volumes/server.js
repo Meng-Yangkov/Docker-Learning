@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.sendFile(filePath);
 });
 
-app.get('/exists', (req, res) => {
+app.get('/exists', (req, res) => { 
   const filePath = path.join(__dirname, 'pages', 'exists.html');
   res.sendFile(filePath);
 });
