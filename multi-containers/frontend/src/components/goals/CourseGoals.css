@@ -1,9 +1,19 @@
 #course-goals {
   text-align: center;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
 #course-goals h2 {
-  color: #414040;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #111;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #111;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 #course-goals ul {
@@ -11,3 +21,4 @@
   margin: 0;
   padding: 0;
 }
+  
