@@ -1,36 +1,44 @@
-#goal-input {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-#goal-input input {
-  width: 60%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border: 2px solid #111;
-  border-radius: 0;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-#goal-input input:focus {
-  border-color: #ff0000; /* Nike red accent */
-}
-
-#goal-input button {
-  margin-left: 1rem;
-  padding: 0.8rem 1.5rem;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem;
   background-color: #111;
+  border-radius: 50px;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-container input {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #fff;
+  background-color: transparent;
   border: none;
+  outline: none;
+}
+
+.form-container input::placeholder {
+  color: #888;
+}
+
+.form-container button {
+  padding: 0.8rem 2rem;
+  background-color: #fff; 
+  color: #111;
+  border: none;
+  border-radius: 30px;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
 }
 
-#goal-input button:hover {
-  background-color: #ff0000;
+.form-container button:hover {
+  transform: scale(1.05);
 }
