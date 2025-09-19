@@ -1,3 +1,4 @@
+# Build image of node-api 
 FROM node
 
 WORKDIR /app
