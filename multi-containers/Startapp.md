@@ -15,3 +15,7 @@ docker run --name frontend-goals --rm -d --network goals-net -p 3000:3000 fronte
 ## Mongo Database
 Start with data persistance and security 
 docker run --name mongodb --rm -d --network goals-net -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=heak1122 -v data:/data/db mongo
+
+
+## Start Backend api
+docker run --name backend-goals --rm -d --network goals-net  -v D:\Linux\Docker\ReanDocker\multi-containers\backend:/app -v logs:/app/logs -p 80:80 backend-node
