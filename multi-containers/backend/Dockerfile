@@ -11,4 +11,7 @@ COPY . .
 
 EXPOSE 80
 
+ENV MONGODB_USERNAME mongodbadmin
+ENV MONGODB_PASSWORD heak1122
+
 CMD [ "npm","start" ]
