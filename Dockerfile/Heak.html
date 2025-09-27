@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heak - DevOps Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --bg-color: #121212;
+            --primary-color: #FFFFFF;
+            --secondary-color: #B3B3B3;
+            --accent-color: #282828;
+            --border-color: #404040;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            background: var(--bg-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            padding: 6rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        #main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #main .content {
+            width: 100%;
+        }
+
+        #main h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        #main p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        
+        .project, .skill-category {
+            background: var(--accent-color);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .project h3, .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        #skills .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        #skills ul {
+            list-style: none;
+        }
+
+        #contact p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#main" class="logo">HEAK</a>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="main">
+            <div class="container content">
+                <h1>Heak Knight</h1>
+                <p>DevOps Engineer</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate DevOps Engineer focused on automating, monitoring, and optimizing mission-critical deployments in the cloud. With a strong background in system infrastructure, I specialize in creating robust CI/CD pipelines, managing containerized applications with Docker and Kubernetes, and implementing Infrastructure as Code with tools like Ansible and Terraform. I thrive on bridging the gap between development and operations to build reliable and scalable systems.</p>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>CI/CD Pipeline for Microservices</h3>
+                <p>Designed and implemented a complete CI/CD pipeline using Jenkins, Docker, and Kubernetes to automate the build, test, and deployment of a multi-container application to a staging environment on AWS.</p>
+            </div>
+            <div class="project">
+                <h3>Infrastructure Automation with Ansible</h3>
+                <p>Developed Ansible playbooks to automate the configuration of a fleet of web servers, ensuring consistent environments, managing user access, and enforcing security policies, reducing manual setup time by 90%.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+                        <li><strong>Backend:</strong> Node.js, Express.js</li>
+                        <li><strong>Databases:</strong> MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Containerization & Orchestration</h3>
+                    <ul>
+                        <li>Docker & Docker Compose</li>
+                        <li>Kubernetes (K8s)</li>
+                        <li>Helm</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>CI/CD & Automation</h3>
+                    <ul>
+                        <li>Jenkins</li>
+                        <li>GitLab CI</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <ul>
+                        <li>Ansible</li>
+                        <li>Terraform</li>
+                        <li>AWS CloudFormation</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <ul>
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>Google Cloud Platform (GCP)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>You can reach me via email at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="#" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Heak. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
