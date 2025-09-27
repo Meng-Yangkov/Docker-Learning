@@ -18,7 +18,6 @@ docker run --name mongodb --rm -d --network goals-net -e MONGO_INITDB_ROOT_USERN
 
 
 ## Start Backend api
-docker run --name backend-goals --rm -d --network goals-net  -v D:\Linux\Docker\ReanDocker\multi-containers\backend:/app -v logs:/app/logs -p 80:80 backend-node
-
+t
 ## with interactive
 docker run --name backend-goals --rm -it -p 80:80 --network goals-net -v D:\Linux\Docker\ReanDocker\multi-containers\backend:/app -v backend-logs:/app/logs backend-node sh -c "npm install && npm start"
