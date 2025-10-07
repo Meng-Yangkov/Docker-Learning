@@ -1,0 +1,27 @@
+services:
+  webserver01:
+    image: nginx
+    ports:
+      - 8585:80
+    networks:
+      - net-testing
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+  database:
+    image: mysql
+    ports:
+      - 3306:3306
+    container_name: mysql
+    networks:
+      - net-testing
+    volumes:
+      - mysql-data:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=Pa55w.rd
+
+networks:
+  net-testing:
+    external: true
+volumes:
+  mysql-data:
+    external: true
